@@ -31,27 +31,32 @@ const navLinks = [
 
 <template>
   <UApp>
-    <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/60 dark:border-slate-800/60">
+    <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/60 dark:bg-slate-950/60 backdrop-blur-xl border border-slate-200/40 dark:border-slate-800/40 transition-all duration-300 shadow-xl shadow-teal-500/20 rounded-3xl px-4 py-2 w-[90vw] max-w-2xl">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <NuxtLink to="/" class="shrink-0">
-            <AppLogo />
+        <div class="flex items-center justify-between h-12 md:h-14 lg:h-16">
+          
+          <NuxtLink to="/" class="shrink-0 group">
+            <div class="transition-transform duration-300 group-hover:scale-105">
+              <AppLogo />
+            </div>
           </NuxtLink>
 
-          <nav class="hidden md:flex items-center gap-1">
+          
+          <nav class="hidden md:flex items-center gap-2 glassy-nav">
             <NuxtLink
               v-for="link in navLinks"
               :key="link.to"
               :to="link.to"
-              class="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white rounded-lg transition-colors"
-              active-class="!text-slate-900 dark:!text-white bg-slate-100 dark:bg-slate-800"
+              class="relative px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 rounded-xl transition-all duration-300 hover:text-white hover:bg-white/20 dark:hover:bg-slate-900/20 backdrop-blur-md glassy-link group border border-white/20 dark:border-slate-700/30"
+              active-class="!text-white !bg-teal-600 dark:!bg-teal-500 shadow-lg shadow-teal-500/30 !backdrop-blur-xl !border-none"
             >
-              {{ link.label }}
+              <span class="relative z-10">{{ link.label }}</span>
+              <div class="absolute inset-0 rounded-xl bg-white/10 dark:bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm" style="z-index: -1;" />
             </NuxtLink>
           </nav>
 
-          <div class="flex items-center gap-3">
-            <UColorModeButton />
+          <div class="flex items-center gap-3 md:gap-4">
+            <UColorModeButton class="transition-transform duration-300 hover:scale-110" />
             <MobileMenu :links="navLinks" />
           </div>
         </div>
@@ -62,91 +67,104 @@ const navLinks = [
       <NuxtPage />
     </UMain>
 
-    <footer class="bg-slate-900 dark:bg-slate-950 text-white relative overflow-hidden">
+    <footer class="bg-slate-950 dark:bg-slate-950 text-white relative overflow-hidden">
+      
       <div class="absolute inset-0">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl" />
-        <div class="absolute bottom-0 left-0 w-80 h-80 bg-lime-500/5 rounded-full blur-2xl" />
+        <div class="absolute top-0 right-0 w-96 h-96 bg-teal-500/8 rounded-full blur-3xl" />
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-cyan-500/8 rounded-full blur-2xl" />
+        <div class="absolute top-1/2 right-1/4 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl" />
       </div>
       
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
-          <div class="space-y-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16 pb-16 border-b border-slate-800/60">
+          <div class="space-y-8">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-2xl hero-gradient flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-                  <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-                  <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <span class="text-2xl font-bold tracking-tight">DESTINY</span>
+              <img src="/logo-header.png" alt="Destiny Logo" class="h-12 w-auto brightness-0 invert dark:brightness-100 dark:invert-0" />
             </div>
-            <p class="text-slate-300 leading-relaxed max-w-sm">
-              Transforming clinic management with innovative technology. Streamline your operations and focus on what matters most — your patients.
+            <p class="text-lg text-slate-300 leading-relaxed max-w-md font-light">
+              Transforming clinic management with cutting-edge technology. Streamline your operations and focus on delivering exceptional patient care.
             </p>
-            <div class="flex items-center gap-4">
+            
+            <div class="flex items-center gap-3 pt-2">
               <a 
                 href="https://wa.me/628119623333" 
                 target="_blank"
-                class="w-10 h-10 rounded-xl bg-slate-800/50 hover:bg-green-600 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110"
+                class="w-12 h-12 rounded-xl bg-slate-800/60 hover:bg-gradient-to-br hover:from-green-600 hover:to-green-700 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-green-600/30 group border border-slate-700/60 hover:border-green-600/40"
               >
-                <UIcon name="i-lucide-message-circle" class="w-5 h-5" />
+                <UIcon name="i-lucide-message-circle" class="w-5 h-5 group-hover:rotate-12 transition-transform" />
               </a>
               <a 
                 href="mailto:info@codelabs.co.id"
-                class="w-10 h-10 rounded-xl bg-slate-800/50 hover:bg-teal-600 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110"
+                class="w-12 h-12 rounded-xl bg-slate-800/60 hover:bg-gradient-to-br hover:from-teal-600 hover:to-cyan-600 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-teal-600/30 group border border-slate-700/60 hover:border-teal-600/40"
               >
-                <UIcon name="i-lucide-mail" class="w-5 h-5" />
+                <UIcon name="i-lucide-mail" class="w-5 h-5 group-hover:rotate-12 transition-transform" />
               </a>
             </div>
           </div>
 
-          <div>
-            <h4 class="text-lg font-semibold text-white mb-6">Navigation</h4>
-            <ul class="space-y-4">
-              <li v-for="link in navLinks" :key="link.to">
-                <NuxtLink 
-                  :to="link.to" 
-                  class="text-slate-300 hover:text-white transition-colors flex items-center gap-2 group"
-                >
-                  <UIcon name="i-lucide-chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  {{ link.label }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </div>
+          
+          <div class="grid grid-cols-2 gap-12">
+            
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-widest text-white mb-8 text-opacity-60">Navigation</h4>
+              <ul class="space-y-4">
+                <li v-for="link in navLinks" :key="link.to">
+                  <NuxtLink 
+                    :to="link.to" 
+                    class="text-slate-300 hover:text-white transition-all duration-300 flex items-center gap-2 group font-medium"
+                  >
+                    <div class="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-teal-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    {{ link.label }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </div>
 
-          <div>
-            <h4 class="text-lg font-semibold text-white mb-6">Contact Information</h4>
-            <ul class="space-y-4">
-              <li class="flex items-start gap-3">
-                <UIcon name="i-lucide-map-pin" class="w-5 h-5 text-teal-400 mt-0.5 shrink-0" />
-                <span class="text-slate-300 leading-relaxed">Jalan Mandar III Blok DC-10 No 66<br>Bintaro Sektor 3A - Bintaro</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <UIcon name="i-lucide-phone" class="w-5 h-5 text-teal-400 shrink-0" />
-                <a href="https://wa.me/628119623333" target="_blank" class="text-slate-300 hover:text-white transition-colors">+62 811-962-3333</a>
-              </li>
-              <li class="flex items-center gap-3">
-                <UIcon name="i-lucide-mail" class="w-5 h-5 text-teal-400 shrink-0" />
-                <a href="mailto:info@codelabs.co.id" class="text-slate-300 hover:text-white transition-colors">info@codelabs.co.id</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="border-t border-slate-800 mt-16 pt-8">
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p class="text-slate-400">
-              &copy; {{ new Date().getFullYear() }} Destiny. All rights reserved.
-            </p>
-            <div class="flex items-center gap-6 text-slate-400">
-              <span class="text-sm">Powered by</span>
-              <span class="font-semibold text-slate-300">Codelabs</span>
+            
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-widest text-white mb-8 text-opacity-60">Contact</h4>
+              <ul class="space-y-4">
+                <li>
+                  <a href="https://wa.me/628119623333" target="_blank" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-start gap-2 group font-medium">
+                    <UIcon name="i-lucide-phone" class="w-4 h-4 text-teal-400 mt-1 shrink-0 group-hover:scale-110 transition-transform" />
+                    <span>+62 811-962-3333</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@codelabs.co.id" class="text-slate-300 hover:text-white transition-colors duration-300 flex items-start gap-2 group font-medium">
+                    <UIcon name="i-lucide-mail" class="w-4 h-4 text-teal-400 mt-1 shrink-0 group-hover:scale-110 transition-transform" />
+                    <span>info@codelabs.co.id</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-12 pb-12 border-b border-slate-800/60">
+          <div>
+            <h4 class="text-sm font-bold uppercase tracking-widest text-white mb-6 text-opacity-60">Address</h4>
+            <div class="flex items-start gap-3">
+              <UIcon name="i-lucide-map-pin" class="w-5 h-5 text-gradient-to-br from-teal-400 to-cyan-400 mt-0.5 shrink-0" style="background: linear-gradient(135deg, #14b8a6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;" />
+              <span class="text-slate-300 leading-relaxed font-medium">Jalan Mandar III Blok DC-10 No 66<br>Bintaro Sektor 3A - Bintaro</span>
+            </div>
+          </div>
+          <div class="col-span-1 md:col-span-2 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <p class="text-slate-400 font-light">
+              &copy; {{ new Date().getFullYear() }} Destiny. All rights reserved.
+            </p>
+            <div class="flex items-center gap-3 text-slate-400">
+            
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="h-px bg-gradient-to-r from-transparent via-teal-500/30 to-transparent" />
       </div>
     </footer>
   </UApp>
 </template>
+

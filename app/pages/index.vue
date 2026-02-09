@@ -25,7 +25,7 @@ const missionItems = [
 
 <template>
   <div>
-    <section class="relative overflow-hidden">
+    <section class="relative overflow-hidden" style="mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);">
       <div class="hero-gradient">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 lg:py-44">
           <div class="max-w-3xl">
@@ -61,13 +61,48 @@ const missionItems = [
       </div>
       <div class="absolute top-20 right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl pointer-events-none" />
       <div class="absolute bottom-10 right-40 w-40 h-40 bg-white/15 rounded-full blur-2xl pointer-events-none" />
-      <img src="/home-feature.png" alt="Destiny Features" class="absolute bottom-20 md:bottom-24 left-0 w-full object-cover opacity-95 pointer-events-none" />
-      <svg class="absolute bottom-0 left-0 w-full h-24 md:h-32" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,40 Q300,0 600,40 T1200,40 L1200,120 L0,120 Z" fill="#f1f5f9" />
+      <svg class="absolute bottom-0 left-0 w-full" style="height: 100px; transform: translateY(1px);" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M0,60 Q300,20 600,50 T1200,60 L1200,120 L0,120 Z" fill="white" class="dark:fill-slate-950" />
+        <path d="M0,50 Q300,10 600,40 T1200,50" stroke="url(#heroWaveGradient)" stroke-width="2" fill="none" />
       </svg>
     </section>
 
-    <section class="relative py-32 md:py-40 overflow-hidden">
+    
+    <div class="w-full relative overflow-hidden" style="mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);">
+      
+      <img src="/home-feature.png" alt="Destiny Features" class="w-full object-cover opacity-95" />
+      
+      
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-50/60 dark:to-slate-950/70 pointer-events-none" />
+      
+      
+      <svg class="absolute bottom-0 left-0 w-full" style="height: 120px; transform: translateY(1px);" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 Q300,60 600,35 T1200,30 L1200,120 L0,120 Z" fill="#f1f5f9" class="dark:fill-slate-950" />
+        <path d="M0,40 Q300,70 600,45 T1200,40" stroke="url(#waveGradient)" stroke-width="2" fill="none" opacity="0.4" />
+        <defs>
+          <linearGradient id="waveGradient" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#14b8a6" opacity="0.6" />
+            <stop offset="50%" stop-color="#06b6d4" opacity="0.8" />
+            <stop offset="100%" stop-color="#14b8a6" opacity="0.6" />
+          </linearGradient>
+        </defs>
+      </svg>
+      
+      
+      <div class="absolute bottom-0 left-0 w-full h-32 pointer-events-none">
+      
+        <div class="absolute bottom-12 left-12 w-32 h-32 bg-teal-300/10 dark:bg-teal-500/5 rounded-full blur-3xl" />
+      
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-48 h-24 bg-cyan-300/5 dark:bg-cyan-500/5 rounded-full blur-3xl" />
+      
+        <div class="absolute bottom-16 right-12 w-40 h-40 bg-teal-200/10 dark:bg-teal-500/5 rounded-full blur-3xl" />
+      </div>
+      
+      
+      <div class="absolute bottom-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-teal-400/30 to-transparent dark:via-teal-500/20 pointer-events-none" />
+    </div>
+
+    <section class="relative py-32 md:py-40 overflow-hidden bg-slate-50 dark:bg-slate-950">
       <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-teal-50/40 to-cyan-50/60 dark:from-slate-950 dark:via-teal-950/20 dark:to-slate-900" />
       <div class="absolute inset-0 opacity-30">
         <div class="absolute top-20 left-10 w-96 h-96 bg-teal-300/20 dark:bg-teal-500/10 rounded-full blur-3xl animate-pulse" />

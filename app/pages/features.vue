@@ -42,15 +42,15 @@ const industries = [
     name: 'Aesthetic Clinics',
     description: 'Comprehensive management solutions designed specifically for beauty and aesthetic treatment centers.',
     image: '/aesthetic-clinic-industry.png',
-    color: 'from-rose-50 to-pink-50 dark:from-rose-950/30 dark:to-slate-900/50',
-    textColor: 'text-rose-800 dark:text-rose-200'
+    color: 'from-rose-50 to-pink-50',
+    textColor: 'text-rose-800'
   },
   {
     name: 'Dental Practices',
     description: 'Specialized features tailored for dental clinics and oral health professionals.',
     image: '/dentistry-industry.png',
-    color: 'from-sky-50 to-cyan-50 dark:from-sky-950/30 dark:to-slate-900/50',
-    textColor: 'text-sky-800 dark:text-sky-200'
+    color: 'from-sky-50 to-cyan-50',
+    textColor: 'text-sky-800'
   }
 ]
 
@@ -81,17 +81,17 @@ const clients = [
       <div class="absolute top-10 left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
     </section>
 
-    <section class="py-24 md:py-32 bg-slate-50 dark:bg-slate-900/50">
+    <section class="py-24 md:py-32 bg-slate-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center mb-20">
           <div class="flex items-center justify-center gap-3 mb-6">
             <UIcon name="i-lucide-star" class="w-6 h-6 text-teal-500" />
-            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Why Choose Us</span>
+            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500">Why Choose Us</span>
           </div>
-          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-8">
+          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">
             Why <span class="gradient-text font-extrabold">Destiny</span> stands out
           </h2>
-          <p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
+          <p class="text-xl text-slate-600 leading-relaxed">
             Specially crafted for beauty and aesthetic industries, designed to optimize operations, stay ahead of competition, and ensure business success.
           </p>
         </div>
@@ -100,15 +100,15 @@ const clients = [
           <div
             v-for="(feature, index) in whyUsFeatures"
             :key="index"
-            class="group relative bg-white dark:bg-slate-900 rounded-3xl border border-slate-200/60 dark:border-slate-700/60 p-8 hover:border-teal-200 dark:hover:border-teal-700 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/60 dark:hover:shadow-slate-900/30 hover:-translate-y-2"
+            class="group relative bg-white rounded-3xl border border-slate-200/60 p-8 hover:border-teal-200 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-2"
           >
             <div class="flex items-start gap-4 mb-6">
               <UIcon :name="feature.icon" class="w-8 h-8 text-teal-500 shrink-0 mt-1" />
               <div>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                <h3 class="text-lg font-bold text-slate-900 mb-2">
                   {{ feature.title }}
                 </h3>
-                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p class="text-slate-600 leading-relaxed">
                   {{ feature.description }}
                 </p>
               </div>
@@ -121,18 +121,18 @@ const clients = [
       </div>
     </section>
 
-    <section class="py-24 md:py-32 bg-white dark:bg-slate-950 relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-teal-50/30 to-transparent dark:via-teal-950/20" />
+    <section class="py-24 md:py-32 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-teal-50/30 to-transparent" />
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="text-center mb-20">
           <div class="flex items-center justify-center gap-3 mb-6">
             <UIcon name="i-lucide-building-2" class="w-6 h-6 text-teal-500" />
-            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Industries We Serve</span>
+            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500">Industries We Serve</span>
           </div>
-          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-8">
+          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">
             Built for <span class="gradient-text font-extrabold">wellness</span> professionals
           </h2>
-          <p class="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+          <p class="text-xl text-slate-600 max-w-3xl mx-auto">
             Tailored solutions for the unique needs of each healthcare specialty.
           </p>
         </div>
@@ -147,7 +147,7 @@ const clients = [
               <img
                 :src="industry.image"
                 :alt="industry.name"
-                class="rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 max-w-full h-auto object-cover"
+                class="rounded-3xl shadow-2xl border border-slate-200 max-w-full h-auto object-cover"
                 style="max-height: 340px;"
               />
               <h3 :class="['text-3xl font-bold mt-8 mb-3', industry.textColor]">{{ industry.name }}</h3>
@@ -158,17 +158,17 @@ const clients = [
       </div>
     </section>
 
-    <section class="py-24 md:py-32 bg-slate-50 dark:bg-slate-900/50">
+    <section class="py-24 md:py-32 bg-slate-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
           <div class="flex items-center justify-center gap-3 mb-6">
             <UIcon name="i-lucide-heart-handshake" class="w-6 h-6 text-teal-500" />
-            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Our Clients</span>
+            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500">Our Clients</span>
           </div>
-          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-8">
+          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">
             Trusted by <span class="gradient-text font-extrabold">industry leaders</span>
           </h2>
-          <p class="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+          <p class="text-xl text-slate-600 max-w-3xl mx-auto">
             Leading dental, aesthetic, and wellness businesses across multiple industries rely on Destiny to streamline operations and elevate their client experience.
           </p>
         </div>
@@ -177,7 +177,7 @@ const clients = [
           <div
             v-for="(client, index) in clients"
             :key="index"
-            class="group rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 flex items-center justify-center hover:border-teal-200 dark:hover:border-teal-700 hover:shadow-lg hover:shadow-slate-200/60 dark:hover:shadow-slate-900/20 transition-all duration-300 p-0"
+            class="group rounded-2xl border border-slate-200 bg-white flex items-center justify-center hover:border-teal-200 hover:shadow-lg hover:shadow-slate-200/60 transition-all duration-300 p-0"
             style="padding:0;background:transparent;border:none;box-shadow:none;"
           >
             <img :src="client.image" alt="Client logo" class="object-contain" style="max-width:100%;max-height:110px;display:block;" />
@@ -188,7 +188,7 @@ const clients = [
       </div>
     </section>
 
-    <section class="py-24 md:py-32 bg-white dark:bg-slate-950">
+    <section class="py-24 md:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative rounded-[2.5rem] hero-gradient overflow-hidden">
           <div class="absolute inset-0">

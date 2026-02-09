@@ -47,39 +47,39 @@ const contactItems = [
       <div class="absolute bottom-0 right-10 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
     </section>
 
-    <section class="py-24 md:py-32 bg-slate-50 dark:bg-slate-900/50">
+    <section class="py-24 md:py-32 bg-slate-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-16">
           <div class="lg:col-span-2 space-y-6">
             <div class="mb-12">
-              <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-4">
+              <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
                 Get in <span class="gradient-text">touch</span>
               </h2>
-              <p class="text-lg text-slate-600 dark:text-slate-400">
+              <p class="text-lg text-slate-600">
                 Choose the best way to reach us. We're here to help you succeed.
               </p>
             </div>
             <div
               v-for="(item, index) in contactItems"
               :key="index"
-              class="group relative bg-white dark:bg-slate-900 rounded-3xl border border-slate-200/60 dark:border-slate-700/60 p-8 hover:border-teal-200 dark:hover:border-teal-700 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/60 dark:hover:shadow-slate-900/30"
+              class="group relative bg-white rounded-3xl border border-slate-200/60 p-8 hover:border-teal-200 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/60"
             >
               <div class="flex items-start gap-6">
                 <UIcon :name="item.icon" class="w-8 h-8 text-teal-500 shrink-0 mt-1" />
                 <div class="min-w-0 flex-1">
-                  <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                  <h3 class="text-lg font-bold text-slate-900 mb-2">
                     {{ item.label }}
                   </h3>
                   <component
                     :is="item.href ? 'a' : 'p'"
                     :href="item.href || undefined"
                     :target="item.href ? '_blank' : undefined"
-                    class="text-slate-700 dark:text-slate-300 leading-relaxed break-words font-medium mb-2"
-                    :class="item.href && 'hover:text-teal-600 dark:hover:text-teal-400 transition-colors'"
+                    class="text-slate-700 leading-relaxed break-words font-medium mb-2"
+                    :class="item.href && 'hover:text-teal-600 transition-colors'"
                   >
                     {{ item.value }}
                   </component>
-                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                  <p class="text-sm text-slate-500">
                     {{ item.description }}
                   </p>
                 </div>
@@ -88,12 +88,12 @@ const contactItems = [
           </div>
 
           <div class="lg:col-span-3">
-            <div class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200/60 dark:border-slate-700/60 p-10 lg:p-12">
+            <div class="bg-white rounded-3xl border border-slate-200/60 p-10 lg:p-12">
               <div class="mb-10">
-                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
                   Send us a message
                 </h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400">
+                <p class="text-lg text-slate-600">
                   Tell us about your clinic and how we can help you achieve your goals.
                 </p>
               </div>

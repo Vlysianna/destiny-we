@@ -62,7 +62,7 @@ const missionItems = [
       <div class="absolute top-20 right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl pointer-events-none" />
       <div class="absolute bottom-10 right-40 w-40 h-40 bg-white/15 rounded-full blur-2xl pointer-events-none" />
       <svg class="absolute bottom-0 left-0 w-full" style="height: 100px; transform: translateY(1px);" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <path d="M0,60 Q300,20 600,50 T1200,60 L1200,120 L0,120 Z" fill="white" class="dark:fill-slate-950" />
+      <path d="M0,60 Q300,20 600,50 T1200,60 L1200,120 L0,120 Z" fill="white" />
         <path d="M0,50 Q300,10 600,40 T1200,50" stroke="url(#heroWaveGradient)" stroke-width="2" fill="none" />
       </svg>
     </section>
@@ -73,7 +73,7 @@ const missionItems = [
       <img src="/home-feature.png" alt="Destiny Features" class="w-full object-cover opacity-95" />
       
       
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-50/60 dark:to-slate-950/70 pointer-events-none" />
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-50/60 pointer-events-none" />
       
       
       <svg class="absolute bottom-0 left-0 w-full" style="height: 120px; transform: translateY(1px);" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,19 +91,19 @@ const missionItems = [
       
       <div class="absolute bottom-0 left-0 w-full h-32 pointer-events-none">
       
-        <div class="absolute bottom-12 left-12 w-32 h-32 bg-teal-300/10 dark:bg-teal-500/5 rounded-full blur-3xl" />
+        <div class="absolute bottom-12 left-12 w-32 h-32 bg-teal-300/10 rounded-full blur-3xl" />
       
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-48 h-24 bg-cyan-300/5 dark:bg-cyan-500/5 rounded-full blur-3xl" />
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-48 h-24 bg-cyan-300/5 rounded-full blur-3xl" />
       
-        <div class="absolute bottom-16 right-12 w-40 h-40 bg-teal-200/10 dark:bg-teal-500/5 rounded-full blur-3xl" />
+        <div class="absolute bottom-16 right-12 w-40 h-40 bg-teal-200/10 rounded-full blur-3xl" />
       </div>
       
       
-      <div class="absolute bottom-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-teal-400/30 to-transparent dark:via-teal-500/20 pointer-events-none" />
+      <div class="absolute bottom-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-teal-400/30 to-transparent pointer-events-none" />
     </div>
 
-    <section class="relative py-32 md:py-40 overflow-hidden bg-slate-50 dark:bg-slate-950">
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-teal-50/40 to-cyan-50/60 dark:from-slate-950 dark:via-teal-950/20 dark:to-slate-900" />
+    <section class="relative py-32 md:py-40 overflow-hidden bg-slate-50">
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-teal-50/40 to-cyan-50/60" />
       <div class="absolute inset-0 opacity-30">
         <div class="absolute top-20 left-10 w-96 h-96 bg-teal-300/20 dark:bg-teal-500/10 rounded-full blur-3xl animate-pulse" />
         <div class="absolute bottom-20 right-20 w-96 h-96 bg-cyan-300/20 dark:bg-cyan-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;" />
@@ -112,12 +112,12 @@ const missionItems = [
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
-          <div class="inline-flex items-center gap-3 px-5 py-2.5 mb-8 rounded-full bg-white/60 dark:bg-slate-800/60 backdrop-blur-xl  border border-white/40 dark:border-slate-700/40">
+          <div class="inline-flex items-center gap-3 px-5 py-2.5 mb-8 rounded-full bg-white/60 backdrop-blur-xl  border border-white/40">
             <div class="relative flex items-center justify-center">
               <div class="absolute inset-0 bg-teal-400/20 rounded-full blur-md" />
               <UIcon name="i-lucide-heart" class="relative w-5 h-5 text-teal-500 animate-pulse" />
             </div>
-            <span class="text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">Our Philosophy</span>
+            <span class="text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Our Philosophy</span>
           </div>
           
           <h2 class="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 dark:text-white leading-[1.05] mb-8 tracking-tight">

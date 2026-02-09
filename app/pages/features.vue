@@ -115,6 +115,9 @@ const clients = [
             </div>
           </div>
         </div>
+        <div class="flex justify-center mt-12">
+          <img src="/features.png" alt="Features preview" class="rounded-3xl shadow-xl max-w-full" style="max-width:700px; width:100%; height:auto;" />
+        </div>
       </div>
     </section>
 

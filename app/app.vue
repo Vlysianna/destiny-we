@@ -47,7 +47,7 @@ const navLinks = [
               v-for="link in navLinks"
               :key="link.to"
               :to="link.to"
-              class="relative px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 rounded-xl transition-all duration-300 hover:text-white hover:bg-white/20 dark:hover:bg-slate-900/20 backdrop-blur-md glassy-link group border border-white/20 dark:border-slate-700/30"
+              class="relative px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 rounded-xl transition-all duration-300 hover:text-teal-700 dark:hover:text-white hover:bg-white/20 dark:hover:bg-slate-900/20 backdrop-blur-md glassy-link group border border-white/20 dark:border-slate-700/30"
               active-class="!text-white !bg-teal-600 dark:!bg-teal-500 shadow-lg shadow-teal-500/30 !backdrop-blur-xl !border-none"
             >
               <span class="relative z-10">{{ link.label }}</span>
@@ -56,8 +56,8 @@ const navLinks = [
           </nav>
 
           <div class="flex items-center gap-3 md:gap-4">
-            <UColorModeButton class="transition-transform duration-300 hover:scale-110" />
-            <MobileMenu :links="navLinks" />
+            <!-- <UiColorModeButton class="transition-transform duration-300 hover:scale-110" />
+            <MobileMenu :links="navLinks" /> -->
           </div>
         </div>
       </div>

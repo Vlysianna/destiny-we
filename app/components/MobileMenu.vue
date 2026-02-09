@@ -11,7 +11,7 @@ const isOpen = ref(false)
 <template>
   <div class="md:hidden">
     <button
-      class="p-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 hover:scale-105"
+      class="p-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 hover:scale-105"
       @click="isOpen = !isOpen"
     >
       <UIcon :name="isOpen ? 'i-lucide-x' : 'i-lucide-menu'" class="w-6 h-6" />
@@ -34,7 +34,7 @@ const isOpen = ref(false)
             v-for="link in links"
             :key="link.to"
             :to="link.to"
-            class="block px-5 py-3.5 text-base font-semibold text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white rounded-xl transition-all duration-300 relative group"
+            class="block px-5 py-3.5 text-base font-semibold text-slate-600 dark:text-slate-300 hover:text-teal-700 dark:hover:text-white rounded-xl transition-all duration-300 relative group"
             active-class="!text-white !bg-gradient-to-r !from-teal-600 !to-cyan-600 shadow-lg shadow-teal-500/30"
             @click="isOpen = false"
           >

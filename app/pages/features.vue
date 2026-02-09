@@ -41,27 +41,25 @@ const industries = [
   {
     name: 'Aesthetic Clinics',
     description: 'Comprehensive management solutions designed specifically for beauty and aesthetic treatment centers.',
-    icon: 'i-lucide-sparkles',
+    image: '/aesthetic-clinic-industry.png',
     color: 'from-rose-50 to-pink-50 dark:from-rose-950/30 dark:to-slate-900/50',
-    iconColor: 'text-rose-500',
     textColor: 'text-rose-800 dark:text-rose-200'
   },
   {
     name: 'Dental Practices',
     description: 'Specialized features tailored for dental clinics and oral health professionals.',
-    icon: 'i-lucide-smile',
+    image: '/dentistry-industry.png',
     color: 'from-sky-50 to-cyan-50 dark:from-sky-950/30 dark:to-slate-900/50',
-    iconColor: 'text-sky-500',
     textColor: 'text-sky-800 dark:text-sky-200'
   }
 ]
 
 const clients = [
-  { name: 'Elite Clinic', initial: 'E' },
-  { name: 'Beauty Center', initial: 'B' },
-  { name: 'Dental Plus', initial: 'D' },
-  { name: 'Aesthetic Pro', initial: 'A' },
-  { name: 'Wellness Hub', initial: 'W' }
+  { name: 'Elite Clinic', image: '/client1.png' },
+  { name: 'Beauty Center', image: '/client2.png' },
+  { name: 'Dental Plus', image: '/client3.png' },
+  { name: 'Aesthetic Pro', image: '/client4.png' },
+  { name: 'Wellness Hub', image: '/client5.png' }
 ]
 </script>
 
@@ -136,30 +134,21 @@ const clients = [
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-16 max-w-5xl mx-auto items-center justify-center">
           <div
             v-for="(industry, index) in industries"
             :key="index"
-            class="group relative"
+            class="flex-1 flex flex-col items-center text-center"
           >
-            <div class="h-full rounded-3xl overflow-hidden border border-slate-200/60 dark:border-slate-700/60 bg-white dark:bg-slate-900 hover:border-teal-200 dark:hover:border-teal-700 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/60 dark:hover:shadow-slate-900/30">
-              <div :class="['aspect-[16/10] bg-gradient-to-br flex items-center justify-center relative overflow-hidden', industry.color]">
-                <div class="text-center z-10">
-                  <UIcon :name="industry.icon" :class="['w-20 h-20 mx-auto mb-6', industry.iconColor]" />
-                  <h3 :class="['text-2xl font-bold mb-2', industry.textColor]">{{ industry.name }}</h3>
-                  <p :class="['text-base opacity-80', industry.textColor]">{{ industry.description.split('.')[0] }}</p>
-                </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
-              </div>
-              <div class="p-8">
-                <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                  {{ industry.description }}
-                </p>
-                <div class="flex items-center gap-2 text-teal-600 dark:text-teal-400 font-medium">
-                  <span>Learn more</span>
-                  <UIcon name="i-lucide-arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
+            <div class="relative w-full flex flex-col items-center">
+              <img
+                :src="industry.image"
+                :alt="industry.name"
+                class="rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 max-w-full h-auto object-cover"
+                style="max-height: 340px;"
+              />
+              <h3 :class="['text-3xl font-bold mt-8 mb-3', industry.textColor]">{{ industry.name }}</h3>
+              <p :class="['text-lg opacity-80 mb-6', industry.textColor]">{{ industry.description }}</p>
             </div>
           </div>
         </div>
@@ -177,7 +166,7 @@ const clients = [
             Trusted by <span class="gradient-text font-extrabold">industry leaders</span>
           </h2>
           <p class="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-            Hundreds of clinics worldwide trust Destiny to power their operations and deliver exceptional patient care.
+            Leading dental, aesthetic, and wellness businesses across multiple industries rely on Destiny to streamline operations and elevate their client experience.
           </p>
         </div>
 
@@ -185,35 +174,14 @@ const clients = [
           <div
             v-for="(client, index) in clients"
             :key="index"
-            class="group w-40 h-24 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 flex items-center justify-center hover:border-teal-200 dark:hover:border-teal-700 hover:shadow-lg hover:shadow-slate-200/60 dark:hover:shadow-slate-900/20 transition-all duration-300"
+            class="group rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 flex items-center justify-center hover:border-teal-200 dark:hover:border-teal-700 hover:shadow-lg hover:shadow-slate-200/60 dark:hover:shadow-slate-900/20 transition-all duration-300 p-0"
+            style="padding:0;background:transparent;border:none;box-shadow:none;"
           >
-            <div class="text-center">
-              <div class="w-12 h-12 rounded-2xl hero-gradient flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform">
-                <span class="text-base font-bold text-slate-800">{{ client.initial }}</span>
-              </div>
-              <span class="text-xs font-medium text-slate-500 dark:text-slate-400">{{ client.name }}</span>
-            </div>
+            <img :src="client.image" alt="Client logo" class="object-contain" style="max-width:100%;max-height:110px;display:block;" />
           </div>
         </div>
 
-        <div class="text-center">
-          <div class="inline-flex items-center gap-6 text-slate-500 dark:text-slate-400">
-            <div class="flex items-center gap-2">
-              <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-teal-500" />
-              <span class="text-sm font-medium">500+ Active Clinics</span>
-            </div>
-            <div class="w-1 h-1 rounded-full bg-slate-300" />
-            <div class="flex items-center gap-2">
-              <UIcon name="i-lucide-users" class="w-5 h-5 text-teal-500" />
-              <span class="text-sm font-medium">10,000+ Happy Users</span>
-            </div>
-            <div class="w-1 h-1 rounded-full bg-slate-300" />
-            <div class="flex items-center gap-2">
-              <UIcon name="i-lucide-star" class="w-5 h-5 text-teal-500" />
-              <span class="text-sm font-medium">4.9/5 Rating</span>
-            </div>
-          </div>
-        </div>
+        <!-- Client stats removed as requested -->
       </div>
     </section>
 

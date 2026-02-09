@@ -42,6 +42,7 @@ const navLinks = [
           </NuxtLink>
 
           
+          <!-- Desktop Nav -->
           <nav class="hidden md:flex items-center gap-2 glassy-nav">
             <NuxtLink
               v-for="link in navLinks"
@@ -56,8 +57,9 @@ const navLinks = [
           </nav>
 
           <div class="flex items-center gap-3 md:gap-4">
-            <!-- <UiColorModeButton class="transition-transform duration-300 hover:scale-110" />
-            <MobileMenu :links="navLinks" /> -->
+            <!-- <UiColorModeButton class="transition-transform duration-300 hover:scale-110" /> -->
+            <!-- Mobile Nav -->
+            <MobileMenu :links="navLinks" class="md:hidden" />
           </div>
         </div>
       </div>

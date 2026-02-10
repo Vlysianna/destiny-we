@@ -25,8 +25,7 @@ const missionItems = [
 
 <template>
   <div>
-    <section class="relative overflow-hidden" style="mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);">
-        <section class="relative overflow-hidden" style="mask-image: linear-gradient(to bottom, #fff 0%, #fff 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, #fff 0%, #fff 70%, transparent 100%); mask-mode: luminance; -webkit-mask-mode: luminance;">
+    <section class="relative overflow-hidden" style="mask-image: linear-gradient(to bottom, #fff 0%, #fff 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, #fff 0%, #fff 70%, transparent 100%); mask-mode: luminance; -webkit-mask-mode: luminance;">
       <div class="hero-gradient">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 lg:py-44">
           <div class="max-w-3xl">

@@ -68,16 +68,16 @@ const missionItems = [
     </section>
 
     
-    <div class="w-full relative overflow-hidden" style="mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);">
+    <div class="w-full relative overflow-hidden" style="mask-image: linear-gradient(to bottom, transparent 0%, white 30%, white 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, white 30%, white 100%);">
       
       <img src="/home-feature.png" alt="Destiny Features" class="w-full object-cover opacity-95" />
       
       
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-50/60 pointer-events-none" />
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/80 pointer-events-none" />
       
       
       <svg class="absolute bottom-0 left-0 w-full" style="height: 120px; transform: translateY(1px);" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,30 Q300,60 600,35 T1200,30 L1200,120 L0,120 Z" fill="#f1f5f9" />
+        <path d="M0,30 Q300,60 600,35 T1200,30 L1200,120 L0,120 Z" fill="#fff" />
         <path d="M0,40 Q300,70 600,45 T1200,40" stroke="url(#waveGradient)" stroke-width="2" fill="none" opacity="0.4" />
         <defs>
           <linearGradient id="waveGradient" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
@@ -90,16 +90,13 @@ const missionItems = [
       
       
       <div class="absolute bottom-0 left-0 w-full h-32 pointer-events-none">
-      
-        <div class="absolute bottom-12 left-12 w-32 h-32 bg-teal-300/10 rounded-full blur-3xl" />
-      
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-48 h-24 bg-cyan-300/5 rounded-full blur-3xl" />
-      
-        <div class="absolute bottom-16 right-12 w-40 h-40 bg-teal-200/10 rounded-full blur-3xl" />
+        <div class="absolute bottom-12 left-12 w-32 h-32 bg-white/60 rounded-full blur-3xl" />
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-48 h-24 bg-white/40 rounded-full blur-3xl" />
+        <div class="absolute bottom-16 right-12 w-40 h-40 bg-white/50 rounded-full blur-3xl" />
       </div>
       
       
-      <div class="absolute bottom-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-teal-400/30 to-transparent pointer-events-none" />
+      <div class="absolute bottom-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-white to-transparent pointer-events-none" />
     </div>
 
     <section class="relative py-32 md:py-40 overflow-hidden bg-slate-50">

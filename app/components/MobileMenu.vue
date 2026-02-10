@@ -54,19 +54,20 @@ const isOpen = ref(false)
       </div>
     </Transition>
   </div>
-  <style scoped>
-  @keyframes slideDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-32px) scale(0.98);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
+ </template>
+
+<style scoped>
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-32px) scale(0.98);
   }
-  .animate-slide-down {
-    animation: slideDown 0.3s cubic-bezier(0.4,0,0.2,1);
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
-  </style>
-</template>
+}
+.animate-slide-down {
+  animation: slideDown 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+</style>

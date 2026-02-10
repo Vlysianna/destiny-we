@@ -1,5 +1,17 @@
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/image'],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/image'],
+
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+    classSuffix: ''
+  },
+
+  ui: {
+    colors: {
+      primary: 'teal'
+    }
+  },
 
   devtools: {
     enabled: true

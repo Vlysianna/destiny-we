@@ -25,20 +25,20 @@ const missionItems = [
 
 <template>
   <div>
-    <section class="relative overflow-hidden" style="mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);">
+    <section class="relative overflow-hidden" style="mask-image: linear-gradient(to bottom, white 0%, white 70%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, white 0%, white 70%, transparent 100%);">
       <div class="hero-gradient">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 lg:py-44">
           <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/20 backdrop-blur-sm text-sm font-medium text-slate-800 mb-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/60 backdrop-blur-sm text-sm font-medium text-slate-600 mb-6">
               <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
               All-in-one Clinic Solution
             </div>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] tracking-tight">
               Dental and Aesthetic
               <br>
-              <span class="text-slate-700">Clinic Application</span>
+              <span class="text-slate-100">Clinic Application</span>
             </h1>
-            <p class="mt-6 text-lg sm:text-xl text-slate-700/90 max-w-2xl leading-relaxed">
+            <p class="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl leading-relaxed">
               All-in-one solution to manage scheduling, POS, inventory, and customer data for your wellness business.
             </p>
             <div class="mt-10 flex flex-wrap gap-4">
@@ -51,7 +51,7 @@ const missionItems = [
               </NuxtLink>
               <NuxtLink
                 to="/features"
-                class="inline-flex items-center gap-2 px-7 py-3.5 bg-white/60 backdrop-blur-sm text-slate-800 rounded-xl text-sm font-semibold hover:bg-white/80 transition-all border border-white/40"
+                class="inline-flex items-center gap-2 px-7 py-3.5 bg-white/80 backdrop-blur-sm text-slate-600 rounded-xl text-sm font-semibold hover:bg-white/90 transition-all border border-white/40"
               >
                 Explore Features
               </NuxtLink>
@@ -59,21 +59,20 @@ const missionItems = [
           </div>
         </div>
       </div>
-      <div class="absolute top-20 right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl pointer-events-none" />
-      <div class="absolute bottom-10 right-40 w-40 h-40 bg-white/15 rounded-full blur-2xl pointer-events-none" />
+      <div class="absolute top-20 right-20 w-72 h-72 bg-white/60 rounded-full blur-3xl pointer-events-none" />
+      <div class="absolute bottom-10 right-40 w-40 h-40 bg-white/70 rounded-full blur-2xl pointer-events-none" />
       <svg class="absolute bottom-0 left-0 w-full" style="height: 100px; transform: translateY(1px);" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 Q300,20 600,50 T1200,60 L1200,120 L0,120 Z" fill="white" />
         <path d="M0,50 Q300,10 600,40 T1200,50" stroke="url(#heroWaveGradient)" stroke-width="2" fill="none" />
       </svg>
     </section>
-
     
-    <div class="w-full relative overflow-hidden" style="mask-image: linear-gradient(to bottom, transparent 0%, white 30%, white 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, white 30%, white 100%);">
+    <div class="w-full relative overflow-hidden" style="mask-image: linear-gradient(to bottom, transparent 0%, #f8fafc 30%, #f8fafc 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #f8fafc 30%, #f8fafc 100%);">
       
       <img src="/home-feature.png" alt="Destiny Features" class="w-full object-cover opacity-95" />
       
       
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/80 pointer-events-none" />
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white pointer-events-none" />
       
       
       <svg class="absolute bottom-0 left-0 w-full" style="height: 120px; transform: translateY(1px);" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">

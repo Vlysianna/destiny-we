@@ -55,9 +55,9 @@ html {
 }
 
 /* Subtle gradient bg */
-.subtle-gradient {
+/* .subtle-gradient {
   background: linear-gradient(135deg, rgba(204, 219, 133, 0.08), rgba(140, 211, 219, 0.08));
-}
+} */
 
 /* Enhanced animations */
 @keyframes float {

@@ -120,7 +120,7 @@ const missionItems = [
             <span class="text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Our Philosophy</span>
           </div>
           
-          <h2 class="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 dark:text-white leading-[1.05] mb-8 tracking-tight">
+          <h2 class="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 leading-[1.05] mb-8 tracking-tight">
             Rejuvenating <span class="italic font-black">your</span>
             <br>
             <span class="relative inline-block">
@@ -139,10 +139,10 @@ const missionItems = [
             with cutting-edge tech
           </h2>
 
-          <p class="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed font-light">
+          <p class="text-xl sm:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light">
             DESTINY revolutionizes healthcare management with innovative technology,
             <br class="hidden sm:block">
-            empowering you to focus on what truly matters: <span class="font-semibold text-slate-900 dark:text-white">exceptional patient care</span>
+            empowering you to focus on what truly matters: <span class="font-semibold text-slate-900">exceptional patient care</span>
           </p>
         </div>
       </div>

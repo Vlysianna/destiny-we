@@ -154,22 +154,22 @@ const contactItems = [
       </div>
     </section>
 
-    <section class="py-24 md:py-32 bg-white dark:bg-slate-950 relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-teal-50/30 to-transparent dark:via-teal-950/20" />
+    <section class="py-24 md:py-32 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-teal-50/30 to-transparent" />
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="text-center mb-16">
           <div class="flex items-center justify-center gap-3 mb-6">
             <UIcon name="i-lucide-map-pin" class="w-6 h-6 text-teal-500" />
-            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Our Location</span>
+            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500">Our Location</span>
           </div>
-          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
             Visit us in <span class="gradient-text font-extrabold">Bintaro</span>
           </h2>
-          <p class="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+          <p class="text-xl text-slate-600 max-w-3xl mx-auto">
             Located in the heart of South Jakarta, our office is easily accessible and ready to welcome you for face-to-face consultations.
           </p>
         </div>
-        <div class="relative rounded-3xl overflow-hidden border border-slate-200/60 dark:border-slate-700/60 shadow-2xl shadow-slate-200/60 dark:shadow-slate-900/30">
+        <div class="relative rounded-3xl overflow-hidden border border-slate-200/60 shadow-2xl shadow-slate-200/60">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.928219869134!2d106.73647737613663!3d-6.273169193715577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f06f065c241d%3A0x34badb3cb72538f1!2sCodeLabs%20Indonesia!5e0!3m2!1sid!2sid!4v1770614131563!5m2!1sid!2sid"
             width="100%"
@@ -184,12 +184,12 @@ const contactItems = [
       </div>
     </section>
 
-    <section class="py-24 md:py-32 bg-slate-50 dark:bg-slate-900/50">
+    <section class="py-24 md:py-32 bg-slate-50">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-6">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
           Ready to get started?
         </h2>
-        <p class="text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-3xl mx-auto">
+        <p class="text-xl text-slate-600 mb-10 max-w-3xl mx-auto">
           Join hundreds of clinics already using Destiny to streamline their operations and grow their business.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -204,7 +204,7 @@ const contactItems = [
           </a>
           <NuxtLink
             to="/features"
-            class="inline-flex items-center gap-3 px-8 py-4 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded-2xl text-base font-semibold hover:border-teal-200 dark:hover:border-teal-700 transition-all"
+            class="inline-flex items-center gap-3 px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-2xl text-base font-semibold hover:border-teal-200 transition-all"
           >
             View Features
             <UIcon name="i-lucide-chevron-right" class="w-5 h-5" />

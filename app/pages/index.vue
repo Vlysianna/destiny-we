@@ -197,10 +197,10 @@ const missionItems = [
             <UIcon name="i-lucide-compass" class="w-6 h-6 text-teal-500" />
             <span class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Our Mission</span>
           </div>
-          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
             Empowering your business to <span class="gradient-text font-extrabold">thrive</span>
           </h2>
-          <p class="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+          <p class="text-xl text-slate-600 max-w-3xl mx-auto">
             We provide comprehensive solutions that transform how you manage your clinic operations.
           </p>
         </div>
@@ -210,14 +210,14 @@ const missionItems = [
             :key="index"
             class="group relative"
           >
-            <div class="h-full p-10 bg-white dark:bg-slate-900 rounded-3xl border border-slate-200/60 dark:border-slate-700/60 hover:border-teal-200 dark:hover:border-teal-700 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/60 dark:hover:shadow-slate-900/30 hover:-translate-y-2">
+            <div class="h-full p-10 bg-white rounded-3xl border border-slate-200/60 hover:border-teal-200 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-2">
               <div class="flex items-center gap-4 mb-6">
                 <UIcon :name="item.icon" class="w-8 h-8 text-teal-500 shrink-0" />
-                <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                <h3 class="text-xl font-bold text-slate-900">
                   {{ item.title }}
                 </h3>
               </div>
-              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p class="text-slate-600 leading-relaxed">
                 {{ item.description }}
               </p>
             </div>

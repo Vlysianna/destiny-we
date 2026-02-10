@@ -31,7 +31,7 @@ const navLinks = [
 
 <template>
   <UApp>
-    <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/60 dark:bg-slate-950/60 backdrop-blur-xl border border-slate-200/40 dark:border-slate-800/40 transition-all duration-300 shadow-xl shadow-teal-500/20 rounded-3xl px-4 py-2 w-[90vw] max-w-2xl">
+    <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-white/60 backdrop-blur-xl border border-slate-200/40 transition-all duration-300 shadow-xl shadow-teal-500/20 rounded-3xl px-4 py-2 w-[90vw] max-w-2xl">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-12 md:h-14 lg:h-16">
           
@@ -48,11 +48,11 @@ const navLinks = [
               v-for="link in navLinks"
               :key="link.to"
               :to="link.to"
-              class="relative px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 rounded-xl transition-all duration-300 hover:text-teal-700 dark:hover:text-white hover:bg-white/20 dark:hover:bg-slate-900/20 backdrop-blur-md glassy-link group border border-white/20 dark:border-slate-700/30"
-              active-class="!text-white !bg-teal-600 dark:!bg-teal-500 shadow-lg shadow-teal-500/30 !backdrop-blur-xl !border-none"
+              class="relative px-5 py-2.5 text-sm font-semibold text-slate-700 rounded-xl transition-all duration-300 hover:text-teal-700 hover:bg-white/20 backdrop-blur-md glassy-link group border border-white/20"
+              active-class="!text-white !bg-teal-600 shadow-lg shadow-teal-500/30 !backdrop-blur-xl !border-none"
             >
               <span class="relative z-10">{{ link.label }}</span>
-              <div class="absolute inset-0 rounded-xl bg-white/10 dark:bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm" style="z-index: -1;" />
+              <div class="absolute inset-0 rounded-xl bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm" style="z-index: -1;" />
             </NuxtLink>
           </nav>
 

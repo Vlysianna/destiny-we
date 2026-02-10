@@ -54,6 +54,74 @@ const industries = [
   }
 ]
 
+const destinyFeatures = [
+  {
+    icon: 'i-lucide-log-in',
+    title: 'Login',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-layout-dashboard',
+    title: 'Dashboard',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-bell',
+    title: 'Notification',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-calendar',
+    title: 'Appointment',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-users',
+    title: 'Customer',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-trending-up',
+    title: 'Sales',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-stethoscope',
+    title: 'Resource (Dokter)',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-package',
+    title: 'Product',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-truck',
+    title: 'Procurement',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-warehouse',
+    title: 'Inventory',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-shield-alert',
+    title: 'System Administrator',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-user-circle',
+    title: 'Profile',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  },
+  {
+    icon: 'i-lucide-log-out',
+    title: 'Logout',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+  }
+]
+
 const clients = [
   { name: 'Elite Clinic', image: '/client1.png' },
   { name: 'Beauty Center', image: '/client2.png' },
@@ -79,6 +147,48 @@ const clients = [
         </div>
       </div>
       <div class="absolute top-10 left-20 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+    </section>
+
+    <section class="py-24 md:py-32 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-20 -left-40 w-80 h-80 bg-teal-100/30 rounded-full blur-3xl" />
+        <div class="absolute bottom-0 -right-40 w-96 h-96 bg-cyan-100/20 rounded-full blur-3xl" />
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-4xl mx-auto text-center mb-20">
+          <div class="flex items-center justify-center gap-3 mb-6">
+            <UIcon name="i-lucide-sparkles" class="w-6 h-6 text-teal-500" />
+            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500">Our Features</span>
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">
+            Everything in <span class="gradient-text font-extrabold">Destiny</span>
+          </h2>
+          <p class="text-xl text-slate-600 leading-relaxed">
+            A complete toolkit of 13 powerful modules designed to transform how you manage your clinic. Each feature is crafted with healthcare professionals in mind.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            v-for="(feature, index) in destinyFeatures"
+            :key="index"
+            class="group relative bg-white rounded-3xl border border-slate-200/60 p-8 hover:border-teal-200 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/60 hover:-translate-y-2"
+          >
+            <div class="flex items-start gap-4 mb-6">
+              <UIcon :name="feature.icon" class="w-8 h-8 text-teal-500 shrink-0 mt-1" />
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">
+                  {{ feature.title }}
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  {{ feature.description }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="py-24 md:py-32 bg-slate-50">
@@ -183,8 +293,6 @@ const clients = [
             <img :src="client.image" alt="Client logo" class="object-contain" style="max-width:100%;max-height:110px;display:block;" />
           </div>
         </div>
-
-        <!-- Client stats removed as requested -->
       </div>
     </section>
 

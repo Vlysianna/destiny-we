@@ -100,44 +100,44 @@ const contactItems = [
               <form class="space-y-6" @submit.prevent>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Full Name</label>
+                    <label class="block text-sm font-semibold text-slate-700 mb-3">Full Name</label>
                     <input
                       type="text"
                       placeholder="Your name"
-                      class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 dark:focus:ring-teal-600 dark:focus:border-teal-600 transition-all"
+                      class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 bg-slate-50 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 transition-all"
                     >
                   </div>
                   <div>
-                    <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Email Address</label>
+                    <label class="block text-sm font-semibold text-slate-700 mb-3">Email Address</label>
                     <input
                       type="email"
                       placeholder="you@company.com"
-                      class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 dark:focus:ring-teal-600 dark:focus:border-teal-600 transition-all"
+                      class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 bg-slate-50 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 transition-all"
                     >
                   </div>
                 </div>
                 <div>
-                  <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Clinic Name</label>
+                  <label class="block text-sm font-semibold text-slate-700 mb-3">Clinic Name</label>
                   <input
                     type="text"
                     placeholder="Your clinic name"
-                    class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 dark:focus:ring-teal-600 dark:focus:border-teal-600 transition-all"
+                    class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 bg-slate-50 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 transition-all"
                   >
                 </div>
                 <div>
-                  <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Phone Number</label>
+                  <label class="block text-sm font-semibold text-slate-700 mb-3">Phone Number</label>
                   <input
                     type="tel"
                     placeholder="+62 8xx-xxxx-xxxx"
-                    class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 dark:focus:ring-teal-600 dark:focus:border-teal-600 transition-all"
+                    class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 bg-slate-50 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 transition-all"
                   >
                 </div>
                 <div>
-                  <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Message</label>
+                  <label class="block text-sm font-semibold text-slate-700 mb-3">Message</label>
                   <textarea
                     rows="5"
                     placeholder="Tell us about your clinic, current challenges, and how we can help you..."
-                    class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 dark:focus:ring-teal-600 dark:focus:border-teal-600 transition-all resize-none"
+                    class="w-full px-5 py-4 text-base rounded-2xl border border-slate-200 bg-slate-50 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-300 focus:border-teal-300 transition-all resize-none"
                   />
                 </div>
                 <button

@@ -32,7 +32,7 @@
 
   --color-destiny-lime: rgba(204, 219, 133, 1);
   --color-destiny-teal: rgba(140, 211, 219, 1);
-  --color-destiny-dark: #1a2332;
+  /* --color-destiny-dark removed for no dark mode */
   --color-destiny-gray: #64748b;
 }
 
@@ -90,9 +90,5 @@ html {
   background-color: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
-
-.dark .glass {
-  background-color: rgba(17, 24, 39, 0.8);
-  border: 1px solid rgba(75, 85, 99, 0.3);
-}
+/* .dark .glass removed for no dark mode */
 

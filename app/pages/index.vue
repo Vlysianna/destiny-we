@@ -44,7 +44,7 @@ const missionItems = [
             <div class="mt-10 flex flex-wrap gap-4">
               <NuxtLink
                 to="/contact"
-                class="inline-flex items-center gap-2 px-7 py-3.5 bg-slate-900 text-white rounded-xl text-sm font-semibold hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/20"
+                class="inline-flex items-center gap-2 px-7 py-3.5 bg-teal-600 text-white rounded-xl text-sm font-semibold hover:bg-teal-700 transition-all shadow-lg shadow-teal-200/20"
               >
                 Contact Us
                 <UIcon name="i-lucide-arrow-right" class="w-4 h-4" />
@@ -77,7 +77,7 @@ const missionItems = [
       
       
       <svg class="absolute bottom-0 left-0 w-full" style="height: 120px; transform: translateY(1px);" preserveAspectRatio="none" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,30 Q300,60 600,35 T1200,30 L1200,120 L0,120 Z" fill="#f1f5f9" class="dark:fill-slate-950" />
+        <path d="M0,30 Q300,60 600,35 T1200,30 L1200,120 L0,120 Z" fill="#f1f5f9" />
         <path d="M0,40 Q300,70 600,45 T1200,40" stroke="url(#waveGradient)" stroke-width="2" fill="none" opacity="0.4" />
         <defs>
           <linearGradient id="waveGradient" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
@@ -105,9 +105,9 @@ const missionItems = [
     <section class="relative py-32 md:py-40 overflow-hidden bg-slate-50">
       <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-teal-50/40 to-cyan-50/60" />
       <div class="absolute inset-0 opacity-30">
-        <div class="absolute top-20 left-10 w-96 h-96 bg-teal-300/20 dark:bg-teal-500/10 rounded-full blur-3xl animate-pulse" />
-        <div class="absolute bottom-20 right-20 w-96 h-96 bg-cyan-300/20 dark:bg-cyan-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;" />
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-200/10 dark:bg-emerald-500/5 rounded-full blur-3xl" />
+        <div class="absolute top-20 left-10 w-96 h-96 bg-teal-300/20 rounded-full blur-3xl animate-pulse" />
+        <div class="absolute bottom-20 right-20 w-96 h-96 bg-cyan-300/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;" />
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-200/10 rounded-full blur-3xl" />
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -148,54 +148,54 @@ const missionItems = [
       </div>
     </section>
 
-    <section class="py-24 md:py-32 bg-white dark:bg-slate-950 relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-teal-50/30 to-transparent dark:via-teal-950/20" />
+    <section class="py-24 md:py-32 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-teal-50/30 to-transparent" />
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="text-center mb-16">
           <div class="flex items-center justify-center gap-3 mb-6">
             <UIcon name="i-lucide-target" class="w-6 h-6 text-teal-500" />
-            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Our Vision</span>
+            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500">Our Vision</span>
           </div>
-          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-[1.1] mb-8">
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] mb-8">
             Your trusted
             <span class="gradient-text font-extrabold">partner of choice</span>
           </h2>
-          <p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-4xl mx-auto">
+          <p class="text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
             Providing innovative, faster, and reliable solutions to wellness industry professionals worldwide.
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="relative group">
-            <div class="text-center p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-teal-200 dark:hover:border-teal-700 transition-all duration-300 hover:shadow-lg hover:shadow-teal-100/50 dark:hover:shadow-teal-900/20">
+            <div class="text-center p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all duration-300 hover:shadow-lg hover:shadow-teal-100/50">
               <UIcon name="i-lucide-zap" class="w-12 h-12 text-teal-500 mx-auto mb-4" />
               <div class="text-4xl font-extrabold gradient-text mb-2">Fast</div>
-              <p class="text-sm font-medium text-slate-600 dark:text-slate-400">Lightning-fast performance for busy clinics</p>
+              <p class="text-sm font-medium text-slate-600">Lightning-fast performance for busy clinics</p>
             </div>
           </div>
           <div class="relative group">
-            <div class="text-center p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-teal-200 dark:hover:border-teal-700 transition-all duration-300 hover:shadow-lg hover:shadow-teal-100/50 dark:hover:shadow-teal-900/20">
+            <div class="text-center p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all duration-300 hover:shadow-lg hover:shadow-teal-100/50">
               <UIcon name="i-lucide-cloud" class="w-12 h-12 text-teal-500 mx-auto mb-4" />
               <div class="text-4xl font-extrabold gradient-text mb-2">100%</div>
-              <p class="text-sm font-medium text-slate-600 dark:text-slate-400">Secure cloud-based infrastructure</p>
+              <p class="text-sm font-medium text-slate-600">Secure cloud-based infrastructure</p>
             </div>
           </div>
           <div class="relative group">
-            <div class="text-center p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-teal-200 dark:hover:border-teal-700 transition-all duration-300 hover:shadow-lg hover:shadow-teal-100/50 dark:hover:shadow-teal-900/20">
+            <div class="text-center p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all duration-300 hover:shadow-lg hover:shadow-teal-100/50">
               <UIcon name="i-lucide-headphones" class="w-12 h-12 text-teal-500 mx-auto mb-4" />
               <div class="text-4xl font-extrabold gradient-text mb-2">24/7</div>
-              <p class="text-sm font-medium text-slate-600 dark:text-slate-400">Round-the-clock expert support</p>
+              <p class="text-sm font-medium text-slate-600">Round-the-clock expert support</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-24 md:py-32 bg-slate-50 dark:bg-slate-900/50">
+    <section class="py-24 md:py-32 bg-slate-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
           <div class="flex items-center justify-center gap-3 mb-6">
             <UIcon name="i-lucide-compass" class="w-6 h-6 text-teal-500" />
-            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Our Mission</span>
+            <span class="text-sm font-semibold uppercase tracking-wider text-slate-500">Our Mission</span>
           </div>
           <h2 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
             Empowering your business to <span class="gradient-text font-extrabold">thrive</span>
@@ -226,7 +226,7 @@ const missionItems = [
       </div>
     </section>
 
-    <section class="py-24 md:py-32 bg-white dark:bg-slate-950">
+    <section class="py-24 md:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative rounded-[2.5rem] hero-gradient overflow-hidden">
           <div class="absolute inset-0">
@@ -246,7 +246,7 @@ const missionItems = [
               <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <NuxtLink
                   to="/contact"
-                  class="group inline-flex items-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-2xl text-base font-semibold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/25 hover:shadow-2xl hover:shadow-slate-900/30 hover:scale-105"
+                  class="group inline-flex items-center gap-3 px-8 py-4 bg-teal-600 text-white rounded-2xl text-base font-semibold hover:bg-teal-700 transition-all shadow-xl shadow-teal-200/25 hover:shadow-2xl hover:shadow-teal-200/30 hover:scale-105"
                 >
                   Get Started Today
                   <UIcon name="i-lucide-arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform" />

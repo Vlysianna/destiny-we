@@ -128,7 +128,7 @@ const missionItems = [
                     <stop stop-color="#14b8a6"/>
                     <stop offset="1" stop-color="#06b6d4"/>
                   </linearGradient>
-                </defs>
+                </defs> 
               </svg>
             </span>
             <br>
